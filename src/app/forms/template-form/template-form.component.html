@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div id="user-data">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="fristName" class="form-control" ngModel name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" class="form-control"ngModel name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control"ngModel name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control"ngModel name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" class="form-control"ngModel name="age"required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" id="Gender" class="form-control"ngModel name="gender" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" class="form-control"ngModel name="phone" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" [disabled]="!f.valid">register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

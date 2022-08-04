@@ -1,0 +1,30 @@
+<p>user informations</p>
+<hr>
+<!--<h2>user Id : {{user.id}}</h2>
+<h2>firstName : {{user.firstName}}</h2>
+<h2>lastName : {{user.lastName}}</h2>
+<h2>email : {{user.email}}</h2>
+<h2>age : {{user.age}}</h2>
+<h2>gender : {{user.gender}}</h2>
+<h2>phone : {{user.phone}}</h2>
+<h2>password: {{user.password}} </h2>-->
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Phone#</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.phone}}</td>
+    </tr>
+</table>

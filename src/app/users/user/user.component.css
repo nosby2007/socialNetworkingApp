@@ -1,0 +1,7 @@
+.table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 2px;
+    margin: 2px;
+    background-color: antiquewhite;
+}
