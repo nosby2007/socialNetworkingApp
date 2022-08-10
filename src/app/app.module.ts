@@ -8,6 +8,7 @@ import { RegisterComponent } from './users/register/register.component';
 import { DataBindingComponent } from './users/data-binding/data-binding.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +16,13 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
     RegisterComponent,
     DataBindingComponent,
     TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
